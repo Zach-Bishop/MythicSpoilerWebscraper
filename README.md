@@ -1,0 +1,2 @@
+# MythicSpoilerWebscraper
+Mythic Spoiler Webscraper

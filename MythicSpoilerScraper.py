@@ -80,7 +80,10 @@ def scrape_mythic_spoiler(expansion=''):
             i.append('')
     print('{} cards with no data'.format(nodata))
     return listforpandas
-data=scrape_mythic_spoiler()
-carddf=DataFrame(data)
-carddf.columns=['Name','Mana Cost', 'Type','Effect','P/T','link','power','toughness']
-carddf.to_csv('Ikoria.csv')
+def main:
+    data=scrape_mythic_spoiler()
+    carddf=DataFrame(data)
+    carddf.columns=['Name','Mana Cost', 'Type','Effect','P/T','link','power','toughness']
+    carddf.to_csv('Ikoria.csv')
+if __name__ == '__main__':
+    main()

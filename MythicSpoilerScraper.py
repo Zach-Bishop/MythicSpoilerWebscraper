@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
@@ -65,7 +59,7 @@ def scrape_mythic_spoiler(expansion=''):
                 if comment in ['TYPE','CARD TEXT','P/T','MANA COST']:
                     if td.text.strip() not in cardinfo:
                         cardinfo.append(td.text.strip())
-        if len(cardinfo)==['']:
+        if cardinfo==['']:
             nodata=nodata+1
         cardinfo.append(cardlink)
         listforpandas.append(cardinfo)
